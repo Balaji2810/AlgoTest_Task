@@ -1,12 +1,12 @@
 PHONE_VALIDATION = "^[6-9]\d{9}$"
 EMAIL_VALIDATION = "^([\w\.\-]+)@([\w\-]+)((\.(\w){2,63}){1,3})$"
 PHONE_OR_EMAIL_VALIDATION = "^([6-9]\d{9}|([\w\.\-]+)@([\w\-]+)((\.(\w){2,63}){1,3}))$"
+NAME_VALIDATION = "^[\w\s]{3,}$"
+PASSWORD_VALIDATION = "^[\w\s]{6,16}$"
 EMAIL_OTP_TEMPLATE = "{} is your verification code for AlgoTest Task."
 EMAIL_TITLE = "AlgoTest Task"
 SMTP_SERVER = "mail.smtp2go.com"
 SMTP_SERVER_PORT = 2525
-NAME_VALIDATION = "^[\w\s]{3,}$"
-PASSWORD_VALIDATION = "^[\w\s]{6,16}$"
 
 
 ALREADY_PRESENT = "{} is already present in the database"

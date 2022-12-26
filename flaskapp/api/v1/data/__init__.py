@@ -5,7 +5,10 @@ from .schema import SCHEMA,expects_json
 from auth import generate_token,verify_token,refresh_token_required,access_token_required
 from helper.formatter import ResponseModel
 from mongoDbConnector import store_leg,all_leg,one_leg
+
+
 data = Blueprint('data', __name__,url_prefix='/data')
+
 
 
 @data.route('/',methods=["POST"])

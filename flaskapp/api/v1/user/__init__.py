@@ -20,8 +20,8 @@ def signup(form:SignUp):
         return ResponseModel(code=400,message=ALREADY_PRESENT.format(PHONE),data={"type":PHONE}),400
     email_otp_status = email_otp.verify_otp(form.email,form.email_otp)
     sms_otp_status = sms_otp.verify_otp(form.phone,form.phone_otp)
-    # if not email_otp_status or not sms_otp_status:
-    #     return ResponseModel(code=400,message=OTP_INVALID,data={"type":OTP}),400
+    if not email_otp_status or not sms_otp_status:
+        return ResponseModel(code=400,message=OTP_INVALID,data={"type":OTP}),400
     hash = password_hash(form.password)
     id = user_signup(form.email,form.phone,form.name,hash)
     return ResponseModel(data={"id":id})
@@ -54,9 +54,4 @@ def check(form:Check):
         status = not check_phone_not_in_db(form.phone_or_email)
     return ResponseModel(data={"user_present":status})
 
-@user.route('/all',methods=["GET"])
-@validate()
-def all():
-    id =  get_all()
-    print(id,flush=True)
-    return ResponseModel(message=str(id))
+

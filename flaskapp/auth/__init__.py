@@ -9,6 +9,7 @@ from constants import REFRESH, ACCESS,HASH,BEARER
 from helper import logger
 from helper.formatter import ResponseModel
 
+
 def token_parser(_type,token):
     """This function will parse the JWT Token
     Args:

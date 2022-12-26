@@ -1,0 +1,401 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link="#0563C1" vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><b><span
+lang=EN-IN style='font-size:24.0pt;line-height:107%'>AlgoTest Task API
+Endpoints</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>Login API</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>This API is used to login
+to the service by using phone number or email along with the password </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>POST</span></b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>  </span><span lang=EN-IN><a
+href="https://algotesttask.onrender.com/api/v1/token/refresh"><span
+style='font-size:16.0pt;line-height:107%'>https://algotesttask.onrender.com/api/v1/token/refresh</span></a></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>form-data</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-align:justify'><span lang=EN-IN style='font-size:16.0pt;
+line-height:107%'>phone_or_email  :  PhoneOrEmailRegex</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-align:justify'><span lang=EN-IN style='font-size:16.0pt;
+line-height:107%'>password  :  PasswordRegex</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-align:justify'><span lang=EN-IN style='font-size:16.0pt;
+line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>Access Request API</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>This API is used to
+request for access token</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>POST</span></b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>          </span><span
+lang=EN-IN><a href="https://algotesttask.onrender.com/api/v1/token/access"><span
+style='font-size:16.0pt;line-height:107%'>https://algotesttask.onrender.com/api/v1/token/access</span></a></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>header</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-indent:
+.5in'><span lang=EN-IN style='font-size:16.0pt;line-height:107%'>Authorization 
+:  Bearer &lt;Refresh Token&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>SignUp API</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>This API is used to create
+a new user</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>POST</span></b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>          </span><span
+lang=EN-IN><a href="https://algotesttask.onrender.com/api/v1/user/signup"><span
+style='font-size:16.0pt;line-height:107%'>https://algotesttask.onrender.com/api/v1/user/signup</span></a></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>form-data</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-align:justify'><span lang=EN-IN style='font-size:16.0pt;
+line-height:107%'>phone  :  PhoneRegex</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-align:justify'><span lang=EN-IN style='font-size:16.0pt;
+line-height:107%'>email  :  EmailRegex</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-align:justify'><span lang=EN-IN style='font-size:16.0pt;
+line-height:107%'>email_otp  :  str</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-align:justify'><span lang=EN-IN style='font-size:16.0pt;
+line-height:107%'>phone_otp  :  str</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-align:justify'><span lang=EN-IN style='font-size:16.0pt;
+line-height:107%'>name  :  NameRegex</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-align:justify'><span lang=EN-IN style='font-size:16.0pt;
+line-height:107%'>password  :  PasswordRegex</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'><br>
+<b>Forgot Password API</b></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>This API is use to reset
+the password</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>PUT</span></b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>  </span><span lang=EN-IN><a
+href="https://algotesttask.onrender.com/api/v1/user/password"><span
+style='font-size:16.0pt;line-height:107%'>https://algotesttask.onrender.com/api/v1/user/password</span></a></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>form-data</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-align:justify'><span lang=EN-IN style='font-size:16.0pt;
+line-height:107%'>phone_or_email  :  PhoneOrEmailRegex</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-align:justify'><span lang=EN-IN style='font-size:16.0pt;
+line-height:107%'>new_password  :  PasswordRegex</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-align:justify'><span lang=EN-IN style='font-size:16.0pt;
+line-height:107%'>otp  :  str</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>Check User API </span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>This API is used to check
+whether the User is registered in the database or not</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>POST</span></b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>          </span><span
+lang=EN-IN><a href="https://algotesttask.onrender.com/api/v1/user/check"><span
+style='font-size:16.0pt;line-height:107%'>https://algotesttask.onrender.com/api/v1/user/check</span></a></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>form-data</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-indent:
+.5in'><span lang=EN-IN style='font-size:16.0pt;line-height:107%'>phone_or_email 
+:  PhoneOrEmailRegex</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>OTP Email API</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>The APi will send a OTP to
+the mentioned email</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>POST</span></b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>          </span><span
+lang=EN-IN><a href="https://algotesttask.onrender.com/api/v1/otp/email"><span
+style='font-size:16.0pt;line-height:107%'>https://algotesttask.onrender.com/api/v1/otp/email</span></a></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>form-data</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>          email  :  EmailRegex</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>OTP Email Verify API</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>This API will verify the
+OTP from email</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>POST</span></b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>          </span><span
+lang=EN-IN><a href="https://algotesttask.onrender.com/api/v1/otp/email/verify"><span
+style='font-size:16.0pt;line-height:107%'>https://algotesttask.onrender.com/api/v1/otp/email/verify</span></a></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>form-data</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>          email  : 
+EmailRegex</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>          otp  :  str</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>OTP Phone API</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>The API will send a OTP to
+the mentioned phone</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>POST</span></b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>          </span><span
+lang=EN-IN><a href="https://algotesttask.onrender.com/api/v1/otp/phone"><span
+style='font-size:16.0pt;line-height:107%'>https://algotesttask.onrender.com/api/v1/otp/phone</span></a></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>form-data</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>          phone  : 
+PhoneRegex</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>OTP Phone Verify API</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>This API will verify the
+OTP from phone</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>POST</span></b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>          </span><span
+lang=EN-IN><a href="https://algotesttask.onrender.com/api/v1/otp/phone/verify"><span
+style='font-size:16.0pt;line-height:107%'>https://algotesttask.onrender.com/api/v1/otp/phone/verify</span></a></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>form-data</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>          phone  : 
+PhoneRegex</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>          otp  :  str</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>Save Records API</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>This API will save all the
+records under the user</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>POST</span></b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>          </span><span
+lang=EN-IN><a href="https://algotesttask.onrender.com/api/v1/data/"><span
+style='font-size:16.0pt;line-height:107%'>https://algotesttask.onrender.com/api/v1/data/</span></a></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>header</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>          Authorization 
+:  Bearer &lt;Access Token&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>form-data</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>          data  : 
+JSONstring(list)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>Get All Records API</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>This API will fetch all
+the records of the user</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>GET   </span></b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'> </span><span lang=EN-IN><a
+href="https://algotesttask.onrender.com/api/v1/data/"><span style='font-size:
+16.0pt;line-height:107%'>https://algotesttask.onrender.com/api/v1/data/</span></a></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>header</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>          Authorization 
+:  Bearer &lt;Access Token&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>Get Single Record</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>This API will fetch a
+single record of the user</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>GET</span></b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>   </span><span
+lang=EN-IN><a href="https://algotesttask.onrender.com/api/v1/data/%3cid%3e"><span
+style='font-size:16.0pt;line-height:107%'>https://algotesttask.onrender.com/api/v1/data/&lt;id&gt;</span></a></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>header</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>          Authorization 
+:  Bearer &lt;Access Token&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><b><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>Regex</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>PhoneRegex  :
+&quot;^[6-9]\d{9}$&quot;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>EmailRegex  :
+&quot;^([\w\.\-]+)@([\w\-]+)((\.(\w){2,63}){1,3})$&quot;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>PhoneOrEmailRegex  :  &quot;^([6-9]\d{9}|([\w\.\-]+)@([\w\-]+)((\.(\w){2,63}){1,3}))$&quot;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>NameRegex  :  &quot;^[\w\s]{3,}$&quot;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify'><span
+lang=EN-IN style='font-size:16.0pt;line-height:107%'>PasswordRegex  :  &quot;^[\w\s]{6,16}$&quot;</span></p>
+
+</div>
+
+</body>
+
+</html>
