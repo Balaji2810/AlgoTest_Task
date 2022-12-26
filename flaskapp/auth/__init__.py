@@ -10,6 +10,13 @@ from helper import logger
 from helper.formatter import ResponseModel
 
 def token_parser(_type,token):
+    """This function will parse the JWT Token
+    Args:
+        _type 
+        token 
+
+    
+    """    
     try:
         secret = os.environ["ACCESS_SECRET"] if _type==ACCESS else os.environ["REFRESH_SECRET"]
         payload = jwt.decode(token, secret, algorithms=[HASH])
@@ -19,6 +26,15 @@ def token_parser(_type,token):
         raise Exception("Invalid Token!!")
 
 def verify_token(_type,token):
+    """This Function will verify the JWT token
+
+    Args:
+        _type 
+        token 
+
+    Returns:
+        _type_:return True if Token is Valid else false
+    """    
     try:
         payload = token_parser(_type,token)
 
@@ -27,6 +43,15 @@ def verify_token(_type,token):
         return False
 
 def generate_token(_type,id, payload=None):
+    """_summary_
+    This function will generate a JWT token with the user_id in the payload
+    Args:
+        _type 
+        id 
+        payload 
+
+    
+    """    
     try:
         secret = os.environ["ACCESS_SECRET"] if _type==ACCESS else os.environ["REFRESH_SECRET"]
         if payload:
@@ -45,6 +70,9 @@ def generate_token(_type,id, payload=None):
 
 
 def access_token_required(f):
+    """Authentication decorator
+
+    """    
     @wraps(f)
     def decorator(*args, **kwargs):
         token = None
@@ -67,6 +95,8 @@ def access_token_required(f):
     return decorator
 
 def refresh_token_required(f):
+    """Authentication decorator
+    """    
     @wraps(f)
     def decorator(*args, **kwargs):
         token = None
