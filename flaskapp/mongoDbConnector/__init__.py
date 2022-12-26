@@ -11,7 +11,7 @@ def get_db():
     """This function returns a mongodb connection
     """    
     try:
-        client = MongoClient(host='mongodb',
+        client = MongoClient(host=os.environ["db_host"],
                             port=27017, 
                             username=os.environ["db_username"], 
                             password=os.environ["db_password"],authSource="admin")
@@ -19,7 +19,7 @@ def get_db():
         return db
     except Exception as e:
         logger.error(e)
-        raise Exception('MongoDB not connected!!!')
+        raise Exception('MongoDB not connected!!! \n'+str(e))
 
 
 def generate_email_otp(email):
