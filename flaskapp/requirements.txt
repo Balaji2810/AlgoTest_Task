@@ -9,3 +9,5 @@ Flask-Cors
 PyJWT
 Flask-HTTPAuth
 jsonschema
+flasgger
+flask-restful-swagger
