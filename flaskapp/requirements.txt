@@ -1,0 +1,10 @@
+flask
+pymongo
+flask-expects-json
+twilio
+pydantic
+Flask-Pydantic
+Flask-Cors
+PyJWT
+Flask-HTTPAuth
+jsonschema

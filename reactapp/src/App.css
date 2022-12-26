@@ -1,0 +1,114 @@
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: linear-gradient(79deg, #b698eb, #8280fc 48%, #fffcfa);
+}
+
+.Home {
+  background-color: #fffcfa;
+  min-height: 100vh;
+  min-width: 75vw;
+  color: black;
+}
+
+.auth-form-container,
+.login-form,
+.signup-form,
+.forgot-password-form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+  .auth-form-container {
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+}
+
+label {
+  text-align: left;
+  padding: 0.25rem 0;
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+
+button {
+  border: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #7439db;
+}
+
+.link-btn {
+  background: none;
+  color: white;
+  text-decoration: underline;
+}
+
+.sent_otp {
+  border: none;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #7439db;
+  margin-left: 0.25rem;
+}
+
+.card {
+  flex-direction: "column";
+  display: flex;
+  background-color: aqua;
+  width: 100%;
+  height: 1000;
+}
+
+.card_cell {
+  background-color: #8280fc;
+  margin: 1rem;
+  width: 500;
+  height: 500;
+  color: brown;
+}
+
+.card_input {
+  border: 1;
+  border-radius: 10px;
+  width: 5rem;
+}
+
+.container {
+  background-color: rgba(226, 226, 226, 0.717);
+}
+
+.select {
+  width: 20;
+}
+
+.simple_momentum {
+  display: flex;
+  flex-direction: row;
+  width: 13rem;
+  height: 2rem;
+}
+
+.trail_sl {
+  display: flex;
+  flex-direction: row;
+  width: 20rem;
+  height: 2rem;
+}
