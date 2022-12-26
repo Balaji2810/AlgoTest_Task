@@ -1,28 +1,28 @@
 version: ‘3.3’
 services:
-  db:
-    image: mongo:latest
-    hostname: mongodb
-    container_name: mongodb_c
-    environment:
-      - MONGO_INITDB_DATABASE=algotest_task
-      - MONGO_INITDB_ROOT_USERNAME=${db_username}
-      - MONGO_INITDB_ROOT_PASSWORD=${db_password}
+  # db:
+  #   image: mongo:latest
+  #   hostname: mongodb
+  #   container_name: mongodb_c
+  #   environment:
+  #     - MONGO_INITDB_DATABASE=algotest_task
+  #     - MONGO_INITDB_ROOT_USERNAME=${db_username}
+  #     - MONGO_INITDB_ROOT_PASSWORD=${db_password}
 
-    ports:
-      - 27017:27017
-  web:
-    build: ./reactapp
-    command: npm start
-    container_name: reactapp_c
-    ports:
-      - "3000:3000"
-    volumes:
-      - ./reactapp:/app
-    stdin_open: true
-    tty: true
-    links:
-      - api
+  #   ports:
+  #     - 27017:27017
+  # web:
+  #   build: ./reactapp
+  #   command: npm start
+  #   container_name: reactapp_c
+  #   ports:
+  #     - "3000:3000"
+  #   volumes:
+  #     - ./reactapp:/app
+  #   stdin_open: true
+  #   tty: true
+  #   links:
+  #     - api
   api:
     build: ./flaskapp
     hostname: api
@@ -43,5 +43,5 @@ services:
       - "5000:5000"
     volumes:
       - ./flaskapp:/app
-    links:
-      - db
+    # links:
+    #   - db
