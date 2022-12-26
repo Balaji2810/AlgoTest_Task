@@ -38,6 +38,7 @@ services:
       - "SERVICE_SID=${SERVICE_SID}"
       - "REFRESH_SECRET=${REFRESH_SECRET}"
       - "ACCESS_SECRET=${ACCESS_SECRET}"
+      - "db_host=${db_host}"
     ports:
       - "5000:5000"
     volumes:
